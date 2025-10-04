@@ -30,10 +30,6 @@ export default class Validate {
         if (content.length < 50) {
             throw new Error("The post is too short (min length 50 chars)");
         }
-
-        if (content.length > 500) {
-            throw new Error("The post is too long (max length 500 chars)");
-        }
     }
 
     static category(category) {
